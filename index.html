@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: lightblue;
+    }
+    h1 {
+        color: white;
+        text-align: center;
+    }
+    #demo {
+        font-size: 50px;
+    }
+    .img {
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+    p {
+        font-size: 20px;
+        text-align: center;
+    }
+</style>
+<body>
+    <h1 id="demo">Mas Mas Solo</h1>
+    <img class="img" src="Jow.jpg" alt="Placeholder Image">
+    <p>Jokowi Dodo</p>
+
+    <audio id="mySound" src="saya-akan-lawan.mp3" preload="auto"></audio>
+
+    <button onclick="playAudio()">Play Sound</button>
+
+</body>
+<script>
+    document.getElementById("demo").innerHTML = "Mas Mas Solo";
+    function playAudio() {
+        var audio = document.getElementById("mySound");
+        audio.play();
+    }
+</script>
+</html>
